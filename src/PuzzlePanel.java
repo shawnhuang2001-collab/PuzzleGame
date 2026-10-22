@@ -6,7 +6,7 @@ public class PuzzlePanel extends JPanel {
 
     private static final int ROWS = 4;
     private static final int COLS = 4;
-    private static final int TILE_SIZE = 100;
+    private static final int TILE_SIZE = 135;
 
     // 保存当前拼图数据
     private PuzzleData puzzleData;
@@ -54,8 +54,8 @@ public class PuzzlePanel extends JPanel {
 
         Image scaledImage =
                 originalImage.getScaledInstance(
-                        400,
-                        400,
+                        540,
+                        540,
                         Image.SCALE_SMOOTH
                 );
 

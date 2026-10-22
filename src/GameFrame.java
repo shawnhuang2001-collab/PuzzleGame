@@ -29,7 +29,7 @@ public class GameFrame extends JFrame {
     private void initFrame() {
 
         setTitle("Puzzle Game");
-        setSize(800, 700);
+        setSize(1000, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
@@ -263,7 +263,9 @@ public class GameFrame extends JFrame {
 
         String[] options = {
                 "动物",
-                "汽车"
+                "交通工具",
+                "建筑",
+                "植物"
         };
 
         int choice = JOptionPane.showOptionDialog(
@@ -282,7 +284,15 @@ public class GameFrame extends JFrame {
         }
 
         if (choice == 1) {
-            changeImageType("images/cars/");
+            changeImageType("images/transportations/");
+        }
+
+        if (choice == 2) {
+            changeImageType("images/buildings/");
+        }
+
+        if (choice == 3) {
+            changeImageType("images/plants/");
         }
     }
 
